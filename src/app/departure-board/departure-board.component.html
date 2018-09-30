@@ -1,0 +1,17 @@
+<p class="center">Current Time: {{ currentDateTime | date:"EEEE M/d/yyyy h:mm a" }}</p>
+<table>
+  <tr>
+    <th>Destination</th>
+    <th>Scheduled Time</th>
+    <th>Station</th>
+    <th>Platform</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let departure of departures">
+    <td class="left">{{ departure.destination }}</td>
+    <td class="center">{{ departure.departureTime | date:"h:mm a" }}</td>
+    <td class="left">{{ departure.station }}</td>
+    <td class="center">{{ departure.trackNumber }}</td>
+    <td class="left">{{ departure.boardingStatus }}</td>
+  </tr>
+</table>
