@@ -20,11 +20,11 @@ Main webpage, includes title and departure board component
 
 ### departure.ts
 
-Departure object that is passed to the departure board component
+Departure object that is used by the departure board component
 
 ### departure.service.ts
 
-Depature service that retrieves data from the MBTA V3 API for use by the departure board component
+Departure service that retrieves data from the MBTA V3 API for use by the departure board component
 
 ### mock-departures.ts
 
